@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#EEEEEE"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/cancelar"
+        android:layout_width="fill_parent"
+        android:layout_height="60sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:background="@drawable/cancel"
+        android:text="@string/cancelar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/llegada"
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

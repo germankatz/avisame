@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        German {
+            keyAlias 'German'
+            keyPassword 'chuky21'
+            storeFile file('/Users/Ger/Desktop/key')
+            storePassword 'chuky21'
+        }
+    }
+    compileSdkVersion 20
+    buildToolsVersion "20.0.0"
+    defaultConfig {
+        applicationId "com.ger.avisame"
+        minSdkVersion 14
+        targetSdkVersion 18
+        versionCode 4
+        versionName "1.1.2"
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.German
+        }
+        debug {
+            signingConfig signingConfigs.German
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:support-v4:18.0.+'
+    compile 'com.google.android.gms:play-services:4.3.+'
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+    compile 'uk.me.lewisdeane.ldialogs:ldialogs@aar'
+}
+
+repositories{
+    flatDir{
+        dirs 'libs'
+    }
+}

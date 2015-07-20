@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Avisame</string>
+    <string name="elegir">ELEGIR LUGAR</string>
+    <string name="dist">Elige la distancia en metros del radio donde sonará la alarma</string>
+    <string name="conf">Configuracion</string>
+    <string name="pref">Preferencias</string>
+    <string name="vibrar">Vibrar</string>
+    <string name="sonar">Sonar</string>
+    <string name="aceptar">✓ ACEPTAR</string>
+    <string name="cancelar">✕ CANCELAR</string>
+    <string name="llegada">Usted ha llegado a su destino</string>
+
+</resources>

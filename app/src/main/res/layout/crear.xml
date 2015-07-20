@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#EEEEEE"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:paddingBottom="16dp"
+        android:paddingTop="40dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_margin="16dp"
+            android:layout_marginTop="36dp"
+            android:id="@+id/elegir"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:maxWidth="300dp">
+
+            <ImageView
+                android:id="@+id/imagen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/map"/>
+            <ImageView
+                android:id="@+id/sombra"
+                android:layout_width="match_parent"
+                android:layout_height="70sp"
+                android:layout_alignRight="@+id/imagen"
+                android:layout_alignLeft="@+id/imagen"
+                android:layout_marginBottom="-5dp"
+                android:layout_alignBottom="@+id/imagen"
+                android:src="@drawable/shadow"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_alignBottom="@+id/sombra"
+                android:layout_alignRight="@+id/sombra"
+                android:padding="16dp"
+                android:text="@string/elegir"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_radius"
+            android:layout_marginTop="16sp"
+            android:id="@+id/con"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:layout_below="@+id/elegir">
+
+            <TextView
+                android:id="@+id/title"
+                android:text="@string/conf"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_below="@+id/title"
+                android:id="@+id/choose"
+                android:textSize="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dist"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:inputType="number"
+                android:background="#EEEEEE"
+                android:layout_marginTop="16dp"
+                android:padding="10dp"
+                android:id="@+id/metros"
+                android:layout_below="@+id/choose"/>
+
+            <TextView
+                android:layout_below="@+id/metros"
+                android:id="@+id/vibra"
+                android:textSize="16dp"
+                android:layout_marginTop="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pref"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vibrar"
+                android:selectAllOnFocus="true"
+                android:layout_marginTop="16sp"
+                android:id="@+id/vibrar"
+                android:layout_below="@+id/vibra"
+                android:layout_alignParentLeft="true" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sonar"
+                android:layout_marginTop="6sp"
+                android:id="@+id/sonar"
+                android:layout_below="@+id/vibrar"
+                android:layout_alignParentLeft="true" />
+
+        </RelativeLayout>
+        
+        <Button
+            android:id="@+id/crear_serv"
+            android:layout_width="fill_parent"
+            android:layout_height="60sp"
+            android:layout_marginTop="16sp"
+            android:layout_margin="16dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_below="@+id/con"
+            android:background="@drawable/button_all"
+            android:text="@string/aceptar"/>
+
+    </RelativeLayout>
+
+</ScrollView>
